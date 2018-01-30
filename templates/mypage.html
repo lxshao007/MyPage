@@ -12,19 +12,20 @@
     <title>Andriple</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/mypage.css"%}"/>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Raleway" rel="stylesheet">
   </head>
   <body>
 
-    <div class="container">
+    <div class="container" id="body">
 
       <!--header-->
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right red">
-            <li class="active"><a href="#">About</a></li>
-            <li ><a href="#">Project</a></li>
-            <li ><a href="#">Experience</a></li>
-            <li ><a href="#">Contact</a></li>
+            <li class="active"><a href="#about">About</a></li>
+            <li ><a href="#project">Project</a></li>
+            <li ><a href="#experience">Experience</a></li>
+            <li ><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="contaier">
@@ -42,208 +43,199 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img class="first-slide" src="{%static "images/andriple.jpg"%}" alt="First slide">
+            <img class="first-slide" src="{%static "images/welcometoandriple.jpg"%}" alt="First slide">
           </div>
 
           <div class="item">
-            <img class="second-slide" src="{% static "images/andriple.jpg"%}" alt="Second slide">
+            <img class="second-slide" src="{% static "images/andripledisplay.jpg"%}" alt="Second slide">
           </div>
 
         </div>
       </div>
       <!--end header  -->
 
-
-
       <!--about  -->
-      <hr />
-      <h3 class="text-center">-ABOUT-</h3>
-      <div class="row">
-        <div class="col-md-2">
-          <img class="img-circle" width="80" height="80" src="{%static "images/andriple-launch-icon.jpg"%}" />
+      <div id="about" class="container-fluid text-center">
+        <h3 class="text-center">about</h3>
+        <div class="row">
+          <div class="col-md-2">
+            <img class="img-circle" width="80" height="80" src="{%static "images/andriple-launch-icon.jpg"%}" />
+          </div>
+          <div class="col-md-10">
+            <p><b>Andriple</b> is an android client for dribbble users. Users can sign in their dribbble account to go through the shots on dribbble.com. The app also has the function of liking a shot, adding shot into bucket, creating new bucket, and sharing the shots with friends.</p>
+          </div>
         </div>
         <br />
-        <div class="col-md-10">
-          <p>
-            <b>Andriple</b> is an android client for dribbble users. Users can sign in their dribbble account to go through the shots on dribbble.com. The app also has the function of liking a shot, adding shot into bucket, creating new bucket, and sharing the shots with friends.
-          </p>
-          <hr />
+        <div class="row">
+          <div class="col-md-10">
+            <p><b>My name </b>is Lingxiao Shao. Or you can call me Lina. I am a fresh programmer in android and web development. I am really passionate about technologies and I have posted some of my projects on the website. Feel free to email me with any questions.<3</p>
+          </div>
+          <div class="col-md-2">
+            <img class="img-circle" width="80" height="80" src="{%static "images/my-icon.JPG"%}" />
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-10">
-          <p><b>My name </b>is Lingxiao Shao. Or you can call me Lina. I am a fresh programmer in android and web development. I am really passionate about technologies and I have posted some of my projects on the website. Feel free to email me with any questions.<3</p>
-          <hr />
-        </div>
-        <div class="col-md-2">
-          <img class="img-circle" width="80" height="80" src="{%static "images/my-icon.JPG"%}" />
-        </div>
-      </div>
-
       <!--end about  -->
 
-      <!--project  -->
-      <h3 class="text-center">-PROJECT-</h3>
-      <br />
-      <div class="row">
-					<!-- project item -->
-					<div class="col-md-6">
-						<div class="project-item">
-							<div class="project-image">
-								<img src="{%static "images/andriple-demo.jpg"%}" class="img-responsive" alt="author">
-							</div>
-							<div class="project-text">
-								<h4>Andriple App</h4>
-								<div class="project-type">Android development</div>
-								<div class="project-time">– 2017 –</div>
-							</div>
-						</div>
-					</div>
-					<!-- end project item -->
-					<!-- team member item -->
-          <div class="col-md-6">
-						<div class="project-item">
-							<div class="project-image">
-								<img src="{%static "images/todo-demo.jpg"%}" class="img-responsive" alt="author">
-							</div>
-							<div class="project-text">
-								<h4>Todo List App</h4>
-								<div class="project-type">Android development</div>
-								<div class="project-time">– 2017 –</div>
-							</div>
-						</div>
-					</div>
-					<!-- end project item -->
-					<!-- project item -->
-          <div class="col-md-6">
-						<div class="project-item">
-							<div class="project-image">
-								<img src="{%static "images/website-demo.jpg"%}" class="img-responsive" alt="author">
-							</div>
-							<div class="project-text">
-								<h4>Andriple Website</h4>
-								<div class="project-type">Web Development</div>
-								<div class="project-time">– 2016 –</div>
-							</div>
-						</div>
-					</div>
-					<!-- end project item -->
-					<!-- project item -->
-          <div class="col-md-6">
-						<div class="project-item">
-							<div class="project-image">
-								<img src="{%static "images/virus-demo.jpg"%}" class="img-responsive" alt="author">
-							</div>
-							<div class="project-text">
-								<h4>Virus Suvival Modeling</h4>
-								<div class="project-type">Data Analysis</div>
-								<div class="project-time">– 2016 –</div>
-							</div>
-						</div>
-					</div>
-					<!-- end project item -->
-				</div>
-       <!--end project  -->
-       <hr />
-       <!--experience  -->
-       <div id="expCarousel" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-           <li data-target="#expCarousel" data-slide-to="0" class="active"></li>
-           <li data-target="#expCarousel" data-slide-to="1"></li>
-           <li data-target="#expCarousel" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner" role="listbox">
-           <div class="item active">
-             <div class="first-slide jumbotron">
-               <div class="contaier">
-                 <h2>Skill Summary</h2>
-                 <p>
-                   Proficient in <b>Python, Java, HTML, CSS, SQL, Git</b>
-                   <br />
-                   Familiar with <b>Numpy, Matplotilb, Glide, Fresco, OkHttp, Bootstrap, Linux</b>
-                   <br />
-                   Self-motived learner, proactive and reliable team member.
-                 </p>
+      <!--project and experience  -->
+      <div id="project" class="container-fluid text-center bg-grey">
+        <!--project -->
+        <h3 class="text-center">project</h3>
+        <div class="row">
+  					<!-- project item -->
+  					<div class="col-md-6">
+  						<div class="thumbnail">
+  							<img src="{%static "images/andriple-demo.jpg"%}" class="img-responsive" alt="andriple">
+                <h4>Andriple App</h4>
+                <div class="project-type">Android development</div>
+                <div class="project-time">– 2017 –</div>
+  						</div>
+  					</div>
+  					<!-- end project item -->
+  					<!-- project item -->
+            <div class="col-md-6">
+  						<div class="thumbnail">
+  							<img src="{%static "images/todo-demo.jpg"%}" class="img-responsive" alt="todo">
+                <h4>Todo List App</h4>
+                <div class="project-type">Android development</div>
+                <div class="project-time">– 2017 –</div>
+  						</div>
+  					</div>
+  					<!-- end project item -->
+  					<!-- project item -->
+            <div class="col-md-6">
+  						<div class="thumbnail">
+  							<img src="{%static "images/website-demo.jpg"%}" class="img-responsive" alt="web">
+                <h4>Andriple Website</h4>
+                <div class="project-type">Web Development</div>
+                <div class="project-time">– 2016 –</div>
+  						</div>
+  					</div>
+  					<!-- end project item -->
+  					<!-- project item -->
+            <div class="col-md-6">
+  						<div class="thumbnail">
+                <img src="{%static "images/virus-demo.jpg"%}" class="img-responsive" alt="virus" />
+                <h4>Virus Survival Modeling</h4>
+                <div class="project-type">Data Analysis</div>
+                <div class="project-time">– 2016 –</div>
+  						</div>
+  					</div>
+  					<!-- end project item -->
+  				</div><!--endrow  -->
+          <!--end project  -->
+
+         <hr />
+         <!--experience  -->
+
+         <div id="experience" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#experience" data-slide-to="0" class="active"></li>
+             <li data-target="#experience" data-slide-to="1"></li>
+             <li data-target="#experience" data-slide-to="2"></li>
+           </ol>
+           <div class="carousel-inner" role="listbox">
+             <div class="item active">
+               <div class="first-slide jumbotron">
+                 <div class="contaier">
+                   <h2>Skill Summary</h2>
+                   <p>
+                     Proficient in <b>Python, Java, HTML, CSS, SQL, Git</b>
+                     Familiar with <b>Numpy, Matplotilb, Glide, Fresco, OkHttp, Bootstrap, Linux</b>
+                     <br />
+                     Self-motived learner, proactive and reliable team member.
+                   </p>
+                 </div>
                </div>
              </div>
-           </div>
 
-           <div class="item">
-             <div class="second-slide jumbotron">
-               <div class="contaier">
-                 <h2>Education</h2>
-                 <p>
-                   Master of Science degree from <b>University of Delaware</b>, Newark, United States.
-                   <br />
-                   Bachelor of Engineer degree from <b>Zhejiang University</b>, Hangzhou, China.
-                  </p>
-
+             <div class="item">
+               <div class="second-slide jumbotron">
+                 <div class="contaier">
+                   <h2>Education</h2>
+                   <p>
+                     Master of Science degree from <b>University of Delaware</b>, Newark, United States.
+                     <br />
+                     Bachelor of Engineer degree from <b>Zhejiang University</b>, Hangzhou, China.
+                    </p>
+                    <br />
+                 </div>
                </div>
              </div>
-           </div>
 
-           <div class="item">
-             <div class="third-slide jumbotron">
-               <div class="contaier">
-                 <h2>Work</h2>
-                 <p>
-                   <b>Research Associate</b> at The Ohio State University, Columbus, United States.
-                   <br />
-                   <b>Research Assistant</b> at University of Delaware, Newark, United States.
-                  </p>
+             <div class="item">
+               <div class="third-slide jumbotron">
+                 <div class="contaier">
+                   <h2>Work</h2>
+                   <p>
+                     <b>Research Associate</b> at The Ohio State University, Columbus, United States.
+                     <br />
+                     <b>Research Assistant</b> at University of Delaware, Newark, United States.
+                    </p>
+                    <br />
+                 </div>
                </div>
              </div>
-           </div>
+             <!-- Left and right controls -->
+            <a class="left carousel-control" href="#experience" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#experience" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+           </div><!--endofcarousel-inner-->
+         </div><!--endofeexperience-->
+         <!--end experience  -->
+      </div><!--end project and experience  -->
 
-         </div><!--endofcarousel-inner-->
-       </div><!--endofexpCarousel-->
-       <!--end experience  -->
        <hr />
        <!--form  -->
-       <h3 class="text-center">Contact Me</h3>
-       <h5 class="text-center">If you have any questions please Contact Me!</h6>
-       <br />
-       <!-- <div class="clearfix"></div> -->
-       <form name="sentMessage" id="contactForm" novalidate="">
-         <div class="row">
-           <div class="col-md-6">
-             <div class="form-group">
-               <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name."/>
+       <div id="contact" class="container-fluid text-center">
+         <h3 class="text-center">Contact Me</h3>
+         <h5 class="text-center">If you have any questions please Contact Me!</h6>
+         <br />
+         <form name="sentMessage" id="contactForm" novalidate="">
+           <div class="row">
+             <div class="col-md-6">
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name."/>
 
+               </div>
+             </div>
+             <div class="col-md-6">
+               <div class="form-group">
+                 <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email."/>
+
+               </div>
              </div>
            </div>
-           <div class="col-md-6">
-             <div class="form-group">
-               <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email."/>
 
+           <div class="row">
+             <div class="col-md-12">
+               <div class="form-group">
+                 <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter your message."></textarea>
+               </div>
+             </div>
+             <div class="clearfix"></div>
+           </div>
+
+           <div class="row">
+             <div class="col-lg-12 text-center">
+               <button type="submit" class="btn btn-primary">Send Message</button>
              </div>
            </div>
-         </div>
 
-         <div class="row">
-           <div class="col-md-12">
-             <div class="form-group">
-               <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter your message."></textarea>
-             </div>
-           </div>
-           <div class="clearfix"></div>
-         </div>
-
-         <div class="row">
-           <div class="col-lg-12 text-center">
-             <button type="submit" class="btn">Send Message</button>
-           </div>
-         </div>
-
-       </form>
+         </form>
+       </div>
        <!--end form  -->
 
 
 
 
-       <footer class="footer">
-         <p>&copy; 2016 Company, Inc.</p>
+       <footer class="footer text-center">
+         <p>Copy &copy; 2016 Lingxiao Shao.</p>
        </footer>
 
      </div><!-- /.container -->

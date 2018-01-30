@@ -2,9 +2,18 @@
 body {
   padding-top:20px;
   padding-bottom: 20px;
-  
-}
+  font-family: 'Raleway', sans-serif;
+  color: #535453;
 
+}
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-family: 'Anton', sans-serif;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
@@ -12,10 +21,11 @@ body {
   padding-left: 15px;
 }
 
-/* Custom page header */
+/* header */
 .header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 3px solid #31ab70;
+
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -24,6 +34,83 @@ body {
   line-height: 40px;
 }
 
+/*head and experience carousel indicator  */
+.carousel-indicators li {
+  border-color: #31ab70;
+  }
+.carousel-indicators li.active {
+  background-color: #31ab70;
+  }
+
+/* navigation */
+.nav li a{
+  color: #31ab70 !important;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  }
+.nav li a:hover, .nav li.active a{
+  color: #fff !important;
+  background-color: #31ab70 !important;
+}
+
+/* about */
+#about p{
+  padding-bottom: 20px;
+  border-bottom: 3px solid #31ab70;
+}
+#about img{
+  box-shadow: 5px 5px 2.5px grey;
+}
+
+/*project */
+
+.project-type{
+  font-family: 'Anton', sans-serif;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+
+}
+
+#project .thumbnail{
+  box-shadow: 6px 6px 3px #31ab70;
+}
+
+
+/* experience */
+#experience .jumbotron{
+  border-top:5px solid #31ab70;
+}
+
+#experience p{
+  font-style: normal;
+}
+
+#experience .carousel-control.right, .carousel-control.left {
+        background-image: none;
+        color: #31ab70;
+}
+
+/*contact*/
+#contact h3{
+  text-shadow: 1.5px 1.5px #31ab70;
+}
+
+#contact button{
+  background-color: #31ab70;
+  border-color: #31ab70;
+}
+
+
+/* footer */
 .footer {
   padding-top: 19px;
   color: #777;
@@ -31,10 +118,17 @@ body {
 }
 
 /* Customize container */
+.container-fluid {
+  padding: 48px 40px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
-    background-color: white;
   }
 }
 
