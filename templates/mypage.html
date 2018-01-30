@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Andriple</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/mypage.css"%}"/>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!--header-->
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right red">
+            <li class="active"><a href="#">About</a></li>
+            <li ><a href="#">Project</a></li>
+            <li ><a href="#">Experience</a></li>
+            <li ><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contaier">
+          <h3 class="text-muted">Andriple</h3>
+        </div>
+      </div>
+
+      <!--head pic slide  -->
+
+      <div id="headCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#headCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#headCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="first-slide" src="{%static "images/andriple.jpg"%}" alt="First slide">
+          </div>
+
+          <div class="item">
+            <img class="second-slide" src="{% static "images/andriple.jpg"%}" alt="Second slide">
+          </div>
+
+        </div>
+      </div>
+      <!--end header  -->
+
+
+
+      <!--about  -->
+      <hr />
+      <h3 class="text-center">-ABOUT-</h3>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-circle" width="80" height="80" src="{%static "images/andriple-launch-icon.jpg"%}" />
+        </div>
+        <br />
+        <div class="col-md-10">
+          <p>
+            <b>Andriple</b> is an android client for dribbble users. Users can sign in their dribbble account to go through the shots on dribbble.com. The app also has the function of liking a shot, adding shot into bucket, creating new bucket, and sharing the shots with friends.
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <p><b>My name </b>is Lingxiao Shao. Or you can call me Lina. I am a fresh programmer in android and web development. I am really passionate about technologies and I have posted some of my projects on the website. Feel free to email me with any questions.<3</p>
+          <hr />
+        </div>
+        <div class="col-md-2">
+          <img class="img-circle" width="80" height="80" src="{%static "images/my-icon.JPG"%}" />
+        </div>
+      </div>
+
+      <!--end about  -->
+
+      <!--project  -->
+      <h3 class="text-center">-PROJECT-</h3>
+      <br />
+      <div class="row">
+					<!-- project item -->
+					<div class="col-md-6">
+						<div class="project-item">
+							<div class="project-image">
+								<img src="{%static "images/andriple-demo.jpg"%}" class="img-responsive" alt="author">
+							</div>
+							<div class="project-text">
+								<h4>Andriple App</h4>
+								<div class="project-type">Android development</div>
+								<div class="project-time">– 2017 –</div>
+							</div>
+						</div>
+					</div>
+					<!-- end project item -->
+					<!-- team member item -->
+          <div class="col-md-6">
+						<div class="project-item">
+							<div class="project-image">
+								<img src="{%static "images/todo-demo.jpg"%}" class="img-responsive" alt="author">
+							</div>
+							<div class="project-text">
+								<h4>Todo List App</h4>
+								<div class="project-type">Android development</div>
+								<div class="project-time">– 2017 –</div>
+							</div>
+						</div>
+					</div>
+					<!-- end project item -->
+					<!-- project item -->
+          <div class="col-md-6">
+						<div class="project-item">
+							<div class="project-image">
+								<img src="{%static "images/website-demo.jpg"%}" class="img-responsive" alt="author">
+							</div>
+							<div class="project-text">
+								<h4>Andriple Website</h4>
+								<div class="project-type">Web Development</div>
+								<div class="project-time">– 2016 –</div>
+							</div>
+						</div>
+					</div>
+					<!-- end project item -->
+					<!-- project item -->
+          <div class="col-md-6">
+						<div class="project-item">
+							<div class="project-image">
+								<img src="{%static "images/virus-demo.jpg"%}" class="img-responsive" alt="author">
+							</div>
+							<div class="project-text">
+								<h4>Virus Suvival Modeling</h4>
+								<div class="project-type">Data Analysis</div>
+								<div class="project-time">– 2016 –</div>
+							</div>
+						</div>
+					</div>
+					<!-- end project item -->
+				</div>
+       <!--end project  -->
+       <hr />
+       <!--experience  -->
+       <div id="expCarousel" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+           <li data-target="#expCarousel" data-slide-to="0" class="active"></li>
+           <li data-target="#expCarousel" data-slide-to="1"></li>
+           <li data-target="#expCarousel" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner" role="listbox">
+           <div class="item active">
+             <div class="first-slide jumbotron">
+               <div class="contaier">
+                 <h2>Skill Summary</h2>
+                 <p>
+                   Proficient in <b>Python, Java, HTML, CSS, SQL, Git</b>
+                   <br />
+                   Familiar with <b>Numpy, Matplotilb, Glide, Fresco, OkHttp, Bootstrap, Linux</b>
+                   <br />
+                   Self-motived learner, proactive and reliable team member.
+                 </p>
+               </div>
+             </div>
+           </div>
+
+           <div class="item">
+             <div class="second-slide jumbotron">
+               <div class="contaier">
+                 <h2>Education</h2>
+                 <p>
+                   Master of Science degree from <b>University of Delaware</b>, Newark, United States.
+                   <br />
+                   Bachelor of Engineer degree from <b>Zhejiang University</b>, Hangzhou, China.
+                  </p>
+
+               </div>
+             </div>
+           </div>
+
+           <div class="item">
+             <div class="third-slide jumbotron">
+               <div class="contaier">
+                 <h2>Work</h2>
+                 <p>
+                   <b>Research Associate</b> at The Ohio State University, Columbus, United States.
+                   <br />
+                   <b>Research Assistant</b> at University of Delaware, Newark, United States.
+                  </p>
+               </div>
+             </div>
+           </div>
+
+         </div><!--endofcarousel-inner-->
+       </div><!--endofexpCarousel-->
+       <!--end experience  -->
+       <hr />
+       <!--form  -->
+       <h3 class="text-center">Contact Me</h3>
+       <h5 class="text-center">If you have any questions please Contact Me!</h6>
+       <br />
+       <!-- <div class="clearfix"></div> -->
+       <form name="sentMessage" id="contactForm" novalidate="">
+         <div class="row">
+           <div class="col-md-6">
+             <div class="form-group">
+               <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name."/>
+
+             </div>
+           </div>
+           <div class="col-md-6">
+             <div class="form-group">
+               <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email."/>
+
+             </div>
+           </div>
+         </div>
+
+         <div class="row">
+           <div class="col-md-12">
+             <div class="form-group">
+               <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter your message."></textarea>
+             </div>
+           </div>
+           <div class="clearfix"></div>
+         </div>
+
+         <div class="row">
+           <div class="col-lg-12 text-center">
+             <button type="submit" class="btn">Send Message</button>
+           </div>
+         </div>
+
+       </form>
+       <!--end form  -->
+
+
+
+
+       <footer class="footer">
+         <p>&copy; 2016 Company, Inc.</p>
+       </footer>
+
+     </div><!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static "js/mypage.js"%}"></script>
+  </body>
+</html>
