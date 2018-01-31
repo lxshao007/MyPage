@@ -104,17 +104,22 @@ h3 {
   text-shadow: 1.5px 1.5px #31ab70;
 }
 
-#contact button{
-  background-color: #31ab70;
-  border-color: #31ab70;
+#contact .thumbnail{
+  margin-top: 30px;
+  border: 2px solid #31ab70;
 }
+
+#contact a{
+  color: #31ab70;
+}
+
 
 
 /* footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 3px solid #31ab70;
 }
 
 /* Customize container */
